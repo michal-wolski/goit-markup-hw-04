@@ -376,11 +376,61 @@ a:focus {
   transition: color fill background-color;
 }
 
-.team-list>li:not(:last-child) {
+.team-list > li:not(:last-child) {
   margin-right: 30px;
 }
 
 /* === END TEAM === */
+/* === OUR CLIENTS === */
+
+.client-title {
+  margin: 0;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+.client {
+  display: flex;
+  justify-content: center;
+  width: 1170px;
+  height: 184px;
+
+}
+
+.client-list {
+  display: flex;
+  justify-content: center;
+}
+
+.client-card {
+  display: flex;
+  justify-content: 
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.client-list :not(:last-child) {
+  margin-right: 30px;
+}
+
+.icon-logo {
+  fill: #afb1b8;
+  width: 106px;
+  height: 60,04px;
+  display: flex;
+  justify-content: center;
+}
+/* === END OUR CLIENTS=== */
 button {
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -530,4 +580,3 @@ p {
   color: #ffffff;
 }
 /* === FOOTER === */
-
