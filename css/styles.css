@@ -235,7 +235,7 @@ a:focus {
 }
 .about-us-item {
   width: 270px;
-  height: 101px;
+  height: 251px;
 }
 
 .title-about {
@@ -247,7 +247,7 @@ a:focus {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .text {
@@ -291,8 +291,19 @@ a:focus {
 
 .team {
   margin-top: 94px;
-  height: 648px;
+  height: 708px;
   background-color: #f5f4fa;
+  margin-bottom: 94px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-card {
+  width: 270px;
+  height: 428px;
 }
 
 .team-name {
@@ -329,10 +340,8 @@ a:focus {
   color: var(--main-color);
 }
 
-.team .card {
+.team .team-card {
   background: #ffffff;
-  /* material shadow v1 */
-
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -341,7 +350,9 @@ a:focus {
 .social {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 18px;
 }
 
 .social-links {
@@ -365,12 +376,7 @@ a:focus {
   transition: color fill background-color;
 }
 
-.team-list {
-  display: flex;
-  justify-content: center;
-}
-
-.team-list li:not(:last-child) {
+.team-list>li:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -524,3 +530,4 @@ p {
   color: #ffffff;
 }
 /* === FOOTER === */
+
