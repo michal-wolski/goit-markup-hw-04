@@ -401,7 +401,6 @@ a:focus {
   justify-content: center;
   width: 1170px;
   height: 184px;
-
 }
 
 .client-list {
@@ -411,7 +410,8 @@ a:focus {
 
 .client-card {
   display: flex;
-  justify-content: 
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -425,10 +425,6 @@ a:focus {
 
 .icon-logo {
   fill: #afb1b8;
-  width: 106px;
-  height: 60,04px;
-  display: flex;
-  justify-content: center;
 }
 /* === END OUR CLIENTS=== */
 button {
@@ -578,5 +574,42 @@ p {
 
 .street {
   color: #ffffff;
+}
+
+.footer-social {
+  width: 206px;
+  height: 80px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 18px;
+}
+
+.footer-item {
+  display: flex;
+  justify-content: start;
+}
+
+.footer-social-item {
+  height: 206px;
+  width: 44px;
+}
+
+.footer-social-title {
+  width: 113px;
+  height: 16px;
+  left: 531px;
+  top: 2751px;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--third-color);
 }
 /* === FOOTER === */
