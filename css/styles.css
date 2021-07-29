@@ -1,10 +1,11 @@
 body {
   width: 1600px;
   height: 1880px;
-
   background: #ffffff;
   color: #212121;
   font-family: "Roboto", "Raleway", sans-serif;
+}
+:root {
   --main-font: "Roboto", "Open Sans", sans-serif;
   --secondary-font: "Raleway", sans-serif;
   --main-color: #212121;
@@ -13,16 +14,6 @@ body {
   --additional-color: #757575;
   --bgbutton-portfolio: #f5f4fa;
 }
-
-.margintop {
-  margin-top: 94px;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 h1 h2,
 h3,
 h4,
@@ -31,46 +22,34 @@ h6 {
   margin: 0;
   padding: 0;
 }
-
 ul,
 ol {
   margin: 0;
   padding: 0;
 }
-
 p {
   margin: 0;
   padding: 0;
 }
-
 img {
   display: block;
 }
-
 .list {
   list-style: none;
 }
-
 .link {
   text-decoration: none;
 }
-
 .container {
   width: 1200px;
   margin: 0 auto;
+  align-items: center;
 }
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 /* header */
-
-.header {
-  background-color: #ffffff;
-}
-
 .header .container {
   display: flex;
   padding-top: 24px;
@@ -80,64 +59,48 @@ img {
 /* end header */
 
 /* hero */
-
 .hero {
   color: #ffffff;
-  height: 600px;
+  padding: 200px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.hero-background {
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero-background.jpg);
 }
-
 .hero-button {
-  width: 200px;
-  height: 50px;
+  padding: 10px 41px 10px 42px;
   color: #ffffff;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-
 .hero-title {
-  width: 696px;
-  height: 120px;
-  padding-bottom: 30px;
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 136%;
   text-align: center;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  margin-bottom: 30px;
 }
-
 /* end hero */
 
 /* Menu styles */
-
 .nav-icon {
   margin-right: 10px;
   align-content: center;
   vertical-align: bottom;
 }
-
 .nav-icon:hover {
   fill: var(--secondary-color);
 }
-
+.active {
+  color: var(--secondary-color);
+}
 .logo-header {
-  width: 145px;
-  height: 31px;
   margin-right: 93px;
   font-family: Raleway;
   font-weight: bold;
@@ -156,30 +119,23 @@ img {
 .navigation-item:not(:last-child) {
   margin-right: 46px;
 }
-
 .mail-nav {
   margin-left: auto;
 }
-
 .tel-nav {
   margin-left: 50px;
 }
-
 a {
-  color: #000000;
+  color: var(--main-color);
   font-weight: 500;
   font-size: 14px;
   list-style-type: none;
-  line-height: 16px;
-  letter-spacing: 0.02em;
   text-decoration: none;
 }
-
 a:hover,
 a:focus {
-  color: #2196f3;
+  color: var(--secondary-color);
 }
-
 .mail {
   font-weight: 500;
   font-size: 14px;
@@ -188,7 +144,6 @@ a:focus {
   color: #757575;
   text-decoration: none;
 }
-
 .mail:hover,
 .mail:focus,
 .tel:hover,
@@ -196,7 +151,6 @@ a:focus {
   color: var(--secondary-color);
   fill: var(--secondary-color);
 }
-
 .tel {
   font-weight: 500;
   font-size: 14px;
@@ -205,56 +159,38 @@ a:focus {
   color: #757575;
   text-decoration: none;
 }
-
 /* end menu style */
 
 /* main pages style */
+
 /* === ABOUT US === */
-
-.about-icon {
-  margin-top: 25px;
-  margin-left: 100px;
-}
-
 .about-icon-bg {
-  width: 270px;
-  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 100px 25px 100px;
   background: #f5f4fa;
   border-radius: 4px;
 }
-
 .about-us-list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+.about-us-list h3 {
+  font-weight: bold;
+  font-size: 14px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.about-us-list p {
+  font-size: 14px;
+  color: var(--additional-color);
+}
 .about-us-item:not(:last-child) {
   margin-right: 30px;
 }
 .about-us-item {
-  width: 270px;
-  height: 251px;
-}
-
-.title-about {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-  margin-top: 30px;
-}
-
-.text {
-  font-family: Roboto;
-  font-size: 14px;
-  line-height: 171%;
-  letter-spacing: 0.03em;
-  color: #757575;
 }
 
 /* === END ABOUT US === */
@@ -278,11 +214,12 @@ a:focus {
 
 .work-list {
   display: flex;
+  gap: 30px;
 }
 
-.work-list li {
+/* .work-list li {
   padding-left: 30px;
-}
+} */
 
 /* === END WORK === */
 
