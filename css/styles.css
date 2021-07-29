@@ -190,8 +190,11 @@ a:focus {
 }
 
 .mail:hover,
-.mail:focus {
-  color: #2196f3;
+.mail:focus,
+.tel:hover,
+.tel:focus {
+  color: var(--secondary-color);
+  fill: var(--secondary-color);
 }
 
 .tel {
@@ -203,10 +206,6 @@ a:focus {
   text-decoration: none;
 }
 
-.tel:hover,
-.tel:focus {
-  color: #2196f3;
-}
 /* end menu style */
 
 /* main pages style */
