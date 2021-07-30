@@ -226,20 +226,18 @@ a:focus {
 /* === TEAM === */
 
 .team {
-  margin-top: 94px;
-  height: 708px;
   background-color: #f5f4fa;
-  margin-bottom: 94px;
 }
 
 .team-list {
   display: flex;
   justify-content: center;
+  gap: 30px;
 }
 
 .team-card {
-  width: 270px;
-  height: 428px;
+  max-width: 270px;
+  max-height: 428px;
 }
 
 .team-name {
@@ -264,10 +262,7 @@ a:focus {
 }
 
 .team-title {
-  margin: 0;
-  padding-top: 94px;
-  padding-bottom: 50px;
-  font-family: Roboto;
+  margin: 0 0 50px 0;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
@@ -286,8 +281,7 @@ a:focus {
 .social {
   display: flex;
   justify-content: center;
-  margin-left: 32px;
-  margin-right: 32px;
+  gap: 10px;
   margin-bottom: 18px;
 }
 
@@ -301,7 +295,6 @@ a:focus {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  margin-right: 10px;
 }
 
 .social-links:hover,
@@ -312,18 +305,11 @@ a:focus {
   transition: color fill background-color;
 }
 
-.team-list > li:not(:last-child) {
-  margin-right: 30px;
-}
-
 /* === END TEAM === */
 /* === OUR CLIENTS === */
 
 .client-title {
-  margin: 0;
-  padding-top: 94px;
-  padding-bottom: 50px;
-  font-family: Roboto;
+  margin: 0 0 50px 0;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
@@ -331,19 +317,15 @@ a:focus {
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
-
 .client {
   display: flex;
   justify-content: center;
-  width: 1170px;
-  height: 184px;
 }
-
 .client-list {
   display: flex;
   justify-content: center;
+  gap: 30px;
 }
-
 .client-card {
   display: flex;
   justify-content: center;
@@ -354,27 +336,17 @@ a:focus {
   box-sizing: border-box;
   border-radius: 4px;
 }
-
 .client-card:hover,
 .client-card:focus {
   border: 1px solid var(--secondary-color);
 }
-
-.client-list :not(:last-child) {
-  margin-right: 30px;
-}
-
 .icon-logo {
   fill: #afb1b8;
-  width: 106px;
-  height: 60px;
 }
 
 .icon-logo:hover,
 .icon-logo:focus {
   fill: var(--secondary-color);
-  width: 106px;
-  height: 60px;
   cursor: pointer;
 }
 /* === END OUR CLIENTS=== */
@@ -489,20 +461,13 @@ p {
 .footer .container {
   padding-top: 60px;
 }
-
-.footer .item:first-child {
-  margin-top: 20px;
-}
-
-.footer .item:not(:first-child) {
-  margin-top: 9px;
-}
-
-.footer .item:last-child {
-  padding-bottom: 60px;
-}
 .address {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 60px;
+  padding-top: 20px;
 }
 
 .logo-footer {
@@ -522,71 +487,41 @@ p {
 .footer {
   background-color: #2f303a;
 }
-
 .street {
   color: #ffffff;
 }
-
 .footer-social {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   width: 206px;
   height: 80px;
-  margin-left: 70px;
+  padding-left: 70px;
+  padding-top: 12px;
+  gap: 20px;
 }
-
 .footer-social-list {
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
-
 .footer-item {
   display: flex;
   justify-content: start;
 }
-
-.footer-social-item {
-  height: 206px;
-  width: 44px;
-}
-
-.footer-social-title {
-  width: 113px;
-  height: 16px;
-  left: 531px;
-  top: 2751px;
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--third-color);
-}
-
 .footer-staff {
   display: flex;
 }
-
 .footer-icon {
 }
-
 .social-title {
-  width: 113px;
-  height: 16px;
-  left: 531px;
-  top: 2751px;
-  font-family: Roboto;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 20px;
 }
-
 .social-footer-link {
   display: flex;
   justify-content: center;
@@ -594,11 +529,9 @@ p {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  margin-right: 10px;
   fill: var(--third-color);
   background: rgba(255, 255, 255, 0.1);
 }
-
 .social-footer-link:hover,
 .social-footer-link:focus {
   background-color: var(--secondary-color);
