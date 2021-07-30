@@ -369,14 +369,15 @@ button:hover {
   display: flex;
   justify-content: center;
   margin-bottom: 34px;
+  gap: 9px;
+  height: 54px;
 }
 
-.filters .item:not(:last-child) {
+/* .filters .item:not(:last-child) {
   margin-right: 9px;
-}
+} */
 
 .filters .button {
-  font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 162%;
@@ -393,6 +394,9 @@ button:hover {
 .filters .button:focus {
   background-color: var(--secondary-color);
   color: var(--third-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .filter:active {
@@ -402,34 +406,26 @@ button:hover {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-  padding: 0;
+  gap: 30px;
 }
 
 .portfolio-list .item {
-  margin-left: 30px;
-  margin-top: 30px;
   width: 370px;
   height: 404px;
   background: #ffffff;
   border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
+.discription {
+  padding: 20px 24px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
 .portfolio-list .title {
-  font-family: var(--main-font);
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 4px;
-  padding-top: 20px;
   margin: 0;
-}
-
-.portfolio-list .text {
-  font-family: var(--main-font);
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
 }
 /* === END PORTFOLIO === */
 h2 {
