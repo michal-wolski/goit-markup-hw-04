@@ -333,21 +333,19 @@ a:focus {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
-  box-sizing: border-box;
   border-radius: 4px;
 }
 .client-card:hover,
 .client-card:focus {
-  border: 1px solid var(--secondary-color);
+  border-color: var(--secondary-color);
+  cursor: pointer;
 }
 .icon-logo {
   fill: #afb1b8;
 }
-
-.icon-logo:hover,
-.icon-logo:focus {
+.client-card:hover > .icon-logo,
+.client-card:focus > .icon-logo {
   fill: var(--secondary-color);
-  cursor: pointer;
 }
 /* === END OUR CLIENTS=== */
 button {
